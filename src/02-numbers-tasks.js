@@ -51,11 +51,8 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(val1, val2) {
-  if (val1 > 2e53 || val2 > 2e53) {
-    return (BigInt(val1) + BigInt(val2)) / BigInt(2);
-  }
-  return (val1 + val2) === 0 ? 0 : (val1 + val2) / 2;
+function getAverage(/* val1, val2 */) {
+  throw new Error('Not implemented');
 }
 
 /**
